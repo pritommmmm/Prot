@@ -23,7 +23,7 @@
         }
         header h1 {
             margin: 0;
-            font-size: 3em;
+            font-size: 2.5em; /* Adjusted for better fit on smaller screens */
             line-height: 1.2;
             animation: fadeIn 2s ease-in-out;
         }
@@ -33,14 +33,14 @@
             animation: fadeIn 2s ease-in-out 0.5s;
         }
         .container {
-            width: 80%;
+            width: 90%; /* Adjusted to fit better on various devices */
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
         .section {
             background: #fff;
-            padding: 40px;
+            padding: 20px; /* Adjusted for better fit */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             margin-top: 20px;
@@ -52,7 +52,7 @@
         }
         .section h2 {
             margin-top: 0;
-            font-size: 2.5em;
+            font-size: 2em; /* Adjusted for better readability */
             color: #007BFF;
             animation: slideIn 1s ease-out;
         }
@@ -66,10 +66,10 @@
         }
         .skill {
             flex: 1;
-            min-width: 200px;
+            min-width: 150px; /* Reduced minimum width for better fit */
             background: #007BFF;
             color: #fff;
-            padding: 20px;
+            padding: 15px;
             border-radius: 8px;
             text-align: center;
             transform: scale(0.9);
@@ -84,9 +84,8 @@
             color: #fff;
             padding: 20px;
             text-align: center;
-            position: relative;
-            bottom: 0;
             width: 100%;
+            box-sizing: border-box; /* Ensure padding is included in width */
         }
         footer a {
             color: #00f;
@@ -96,6 +95,11 @@
         footer a:hover {
             text-decoration: underline;
         }
+        @media (max-width: 1024px) {
+            .section {
+                padding: 20px;
+            }
+        }
         @media (max-width: 768px) {
             .skills {
                 flex-direction: column;
@@ -103,6 +107,18 @@
             }
             .skill {
                 width: 100%;
+                min-width: auto;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em; /* Further reduced for very small screens */
+            }
+            header p {
+                font-size: 1em;
+            }
+            .section h2 {
+                font-size: 1.8em; /* Adjusted for smaller screens */
             }
         }
         @keyframes fadeIn {
@@ -125,26 +141,25 @@
     <div class="container">
         <section class="section about-me">
             <h2>About Me</h2>
-            <p>Welcome to my portfolio! I recently started my new journey in web development and took full-stack development course at Tech Booster Institute in Guwahati. I am very much interested in creating websites and developing apps which help me to learn new things and growing in this field.</p>
+            <p>Welcome to my portfolio! I recently began my new journey in web development and took a full-stack development course at Tech Booster Institute in Guwahati. I am very much interested in creating websites and developing apps which help me to learn new things and grow in this field.</p>
         </section>
         <section class="section skills">
             <h2>My Skills</h2>
-            <div class="skill">Web developing and building</div>
-            
+            <div class="skill">Web Developing and Building</div>
             <div class="skill">Video Editing</div>
-            <div class="skill">Fixing problem in your device</div>
+            <div class="skill">Fixing Problems in Your Device</div>
         </section>
         <section class="section contact-me">
             <h2>Contact Me</h2>
             <p>If you have any questions or would like to collaborate, feel free to contact me!</p>
-            <a href="mailto:pritomdeepk@example.com">Send me an Email</a>
+            <a href="mailto:pritamdeep@example.com">Send me an Email</a>
             <p>
-            <a href="https://wa.me/9387528146" target="_blank">Chat with me on WhatsApp</a>
+                <a href="https://wa.me/9387528146" target="_blank">Chat with us on WhatsApp</a>
             </p>
         </section>
     </div>
     <footer>
-        <p> Thank you for visiting my Webpage. <a href="mailto:pritomdeepk@example.com">Contact Me</a></p>
+        <p>Thank you for visiting my webpage. <a href="mailto:pritomdeepk@example.com">Contact Me</a></p>
     </footer>
 </body>
 </html>
